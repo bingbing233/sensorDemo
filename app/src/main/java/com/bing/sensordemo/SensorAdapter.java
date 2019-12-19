@@ -54,6 +54,7 @@ public class SensorAdapter extends Adapter<SensorAdapter.ViewHolder> {
                 intent.putExtra("info", info);
                 intent.putExtra("argNum",argNum);
                 context.startActivity(intent);
+
             }
         });
     }
@@ -74,8 +75,7 @@ public class SensorAdapter extends Adapter<SensorAdapter.ViewHolder> {
             sensorName = itemView.findViewById(R.id.sensor_name);
             sensorInfo = itemView.findViewById(R.id.sensor_info);
             view = itemView;
-            /*sensorData = itemView.findViewById(R.id.sensor_data);
-            mySwitch = itemView.findViewById(R.id.my_switch);*/
+
         }
     }
 }

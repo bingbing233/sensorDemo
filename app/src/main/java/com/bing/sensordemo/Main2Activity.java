@@ -82,7 +82,7 @@ CameraManager cameraManager;
         textData.setText(data);
         Log.d("data", data);
         if(sensor.getType()==sensorType){
-                        if(event.values[0]>2000){
+                        if(event.values[0]>2000||event.values[0]==0){
                             turnOnLight();
                         }
                         else {
